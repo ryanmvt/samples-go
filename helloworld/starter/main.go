@@ -5,8 +5,6 @@ import (
 	"log"
 
 	"go.temporal.io/sdk/client"
-
-	"github.com/temporalio/samples-go/helloworld"
 )
 
 func main() {
@@ -22,7 +20,7 @@ func main() {
 		TaskQueue: "hello-world",
 	}
 
-	we, err := c.ExecuteWorkflow(context.Background(), workflowOptions, helloworld.Workflow, "Temporal")
+	we, err := c.ExecuteWorkflow(context.Background(), workflowOptions, "HelloWorkflow", "Temporal")
 	if err != nil {
 		log.Fatalln("Unable to execute workflow", err)
 	}
