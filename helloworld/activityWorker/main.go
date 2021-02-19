@@ -1,11 +1,11 @@
-package actvities
+package activities
 
 import (
 	"log"
 
+	"github.com/ryanmvt/samples-go/helloworld/activities"
 	"go.temporal.io/sdk/client"
 	"go.temporal.io/sdk/worker"
-	//"github.com/ryanmvt/samples-go/helloworld/activities"
 )
 
 func main() {
@@ -18,7 +18,7 @@ func main() {
 
 	w := worker.New(c, "hello-world", worker.Options{})
 
-	w.RegisterActivity(helloworld.HelloActivity)
+	w.RegisterActivity(activities.HelloActivity)
 
 	err = w.Run(worker.InterruptCh())
 	if err != nil {

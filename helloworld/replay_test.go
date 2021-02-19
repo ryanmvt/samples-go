@@ -37,7 +37,7 @@ func (s *replayTestSuite) TearDownTest() {
 func (s *replayTestSuite) TestReplayWorkflowHistoryFromFile() {
 	replayer := worker.NewWorkflowReplayer()
 
-	replayer.RegisterWorkflow(Workflow)
+	//replayer.RegisterWorkflow(Workflow)
 
 	err := replayer.ReplayWorkflowHistoryFromJSONFile(nil, "helloworld.json")
 	require.NoError(s.T(), err)
