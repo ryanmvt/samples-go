@@ -10,5 +10,5 @@ import (
 func HelloActivity(ctx context.Context, name string) (string, error) {
 	logger := activity.GetLogger(ctx)
 	logger.Info("Activity", "name", name)
-	return "Hello " + name + "!", nil
+	return "Hello " + name + "! You so magic.", nil
 }

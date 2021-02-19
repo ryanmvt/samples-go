@@ -1,4 +1,4 @@
-module github.com/ryanmvt/samples-go/helloworld
+module github.com/ryanmvt/samples-go/helloworldActivities
 
 go 1.15
 

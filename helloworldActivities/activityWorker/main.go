@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/ryanmvt/samples-go/helloworld/activities"
+	"github.com/ryanmvt/samples-go/helloworldActivities/activities"
 	"go.temporal.io/sdk/client"
 	"go.temporal.io/sdk/worker"
 )
