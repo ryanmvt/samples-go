@@ -3,10 +3,9 @@ package main
 import (
 	"log"
 
+	"github.com/ryanmvt/samples-go/helloworld"
 	"go.temporal.io/sdk/client"
 	"go.temporal.io/sdk/worker"
-
-	"github.com/temporalio/samples-go/helloworld"
 )
 
 func main() {
